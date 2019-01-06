@@ -10,7 +10,6 @@ class ViewController: UIViewController {
     @IBOutlet  weak var LED:UITextField!
     var temp:Double = 0
     var tempflag=0
-    var delete=0
     var betemp:Double=0
     var N=0
     @IBAction func BUTTON1(_ sender: Any) {
