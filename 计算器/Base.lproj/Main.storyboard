@@ -110,6 +110,7 @@
                                 </state>
                                 <connections>
                                     <action selector="BUTTONCHEN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABX-jf-cPu"/>
+                                    <action selector="BUTTONMUL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="81A-Yd-Ng6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF2-oy-u4O">
@@ -132,6 +133,7 @@
                                 </state>
                                 <connections>
                                     <action selector="BUTTONCHU:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezn-tf-y5X"/>
+                                    <action selector="BUTTONDIV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEA-fE-5Ol"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLa-54-hms">
@@ -230,9 +232,6 @@
                                 <state key="normal" title="C">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="BUTTONC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iW9-03-qz0"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar9-dF-tbc">
                                 <rect key="frame" x="189" y="495" width="42" height="48"/>

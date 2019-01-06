@@ -6,17 +6,12 @@
 //  Copyright © 2018 s20171106523. All rights reserved.
 //
 import UIKit
-class Stack
-{
-    var tam=0
-}
-
 class ViewController: UIViewController {
     @IBOutlet  weak var LED:UITextField!
     var temp:Double = 0
     var tempflag=0
-    var d=0
-    var m_temp:Double=0
+    var delete=0
+    var betemp:Double=0
     var N=0
     @IBAction func BUTTON1(_ sender: Any) {
         if(tempflag==5)
@@ -187,10 +182,10 @@ class ViewController: UIViewController {
     {
         tempflag=1
         temp = temp + Double(LED.text!)!
-        m_temp = m_temp + Double(LED.text!)!
+        betemp = betemp + Double(LED.text!)!
         if(N>0)
         {
-            LED.text="\(m_temp)"
+            LED.text="\(betemp)"
         }
         else
         {
@@ -205,55 +200,54 @@ class ViewController: UIViewController {
         if(N>0)
         {
             temp = temp - Double(LED.text!)!
-            m_temp = m_temp - Double(LED.text!)!
-            LED.text="\(m_temp)"
+            betemp = betemp - Double(LED.text!)!
+            LED.text="\(betemp)"
         }
         else
         {
             temp = Double(LED.text!)!
-            m_temp = Double(LED.text!)!
+           betemp = Double(LED.text!)!
             LED.text = ""
         }
         N=N+1
     }
-    
-    @IBAction func BUTTONCHEN(_ sender: Any) {
+    @IBAction func BUTTONMUL(_ sender: Any) {
         tempflag=3
         if(N>0)
         {
             temp = temp * Double(LED.text!)!
-            m_temp = m_temp * Double(LED.text!)!
-            LED.text="\(m_temp)"
+            betemp = betemp * Double(LED.text!)!
+            LED.text="\(betemp)"
         }
         else
         {
             temp = Double(LED.text!)!
-            m_temp =  Double(LED.text!)!
+            betemp =  Double(LED.text!)!
             LED.text = ""
         }
         N=N+1
-}
-    @IBAction func BUTTONCHU(_ sender: Any) {
+    }
+    @IBAction func BUTTONDIV(_ sender: Any) {
         tempflag=4
         if(N>0)
         {
             
             temp = temp / Double(LED.text!)!
-            m_temp = m_temp / Double(LED.text!)!
-            LED.text="\(m_temp)"
+            betemp = betemp / Double(LED.text!)!
+            LED.text="\(betemp)"
         }
         else
         {
             temp = Double(LED.text!)!
-            m_temp = Double(LED.text!)!
+            betemp = Double(LED.text!)!
             LED.text = ""
         }
         N=N+1
-}
+    }
     @IBAction func BUTTONAC(_ sender: Any) {
         LED.text = ""
         temp=0
-        m_temp=0
+        betemp=0
         N=0
     }
     @IBAction func BUTTONREM(_ sender: Any) {
@@ -261,13 +255,6 @@ class ViewController: UIViewController {
         LED.text=""
         temp=temp/100
         LED.text="\(temp)"
-    }
-    @IBAction func BUTTONC(_ sender: Any) {
-        temp=Double(LED.text!)!
-        d = Int(temp)
-        d = d/10
-        temp=Double (d)
-        LED.text="\(d)"
     }
     
     @IBAction func BUTTONNEG(_ sender: Any) {
