@@ -10,7 +10,7 @@ class ViewController: UIViewController {
     @IBOutlet  weak var LED:UITextField!
     var temp:Double = 0
     var tempflag=0
-    var betemp:Double=0
+    var code:Double=0
     var N=0
     @IBAction func BUTTON1(_ sender: Any) {
         if(tempflag==5)
@@ -181,10 +181,10 @@ class ViewController: UIViewController {
     {
         tempflag=1
         temp = temp + Double(LED.text!)!
-        betemp = betemp + Double(LED.text!)!
+        code = code + Double(LED.text!)!
         if(N>0)
         {
-            LED.text="\(betemp)"
+            LED.text="\(code)"
         }
         else
         {
@@ -199,13 +199,13 @@ class ViewController: UIViewController {
         if(N>0)
         {
             temp = temp - Double(LED.text!)!
-            betemp = betemp - Double(LED.text!)!
-            LED.text="\(betemp)"
+            code = code - Double(LED.text!)!
+            LED.text="\(code)"
         }
         else
         {
             temp = Double(LED.text!)!
-           betemp = Double(LED.text!)!
+           code = Double(LED.text!)!
             LED.text = ""
         }
         N=N+1
@@ -215,13 +215,13 @@ class ViewController: UIViewController {
         if(N>0)
         {
             temp = temp * Double(LED.text!)!
-            betemp = betemp * Double(LED.text!)!
-            LED.text="\(betemp)"
+            code = code * Double(LED.text!)!
+            LED.text="\(code)"
         }
         else
         {
             temp = Double(LED.text!)!
-            betemp =  Double(LED.text!)!
+            code =  Double(LED.text!)!
             LED.text = ""
         }
         N=N+1
@@ -232,13 +232,13 @@ class ViewController: UIViewController {
         {
             
             temp = temp / Double(LED.text!)!
-            betemp = betemp / Double(LED.text!)!
-            LED.text="\(betemp)"
+            code = code / Double(LED.text!)!
+            LED.text="\(code)"
         }
         else
         {
             temp = Double(LED.text!)!
-            betemp = Double(LED.text!)!
+            code = Double(LED.text!)!
             LED.text = ""
         }
         N=N+1
@@ -246,7 +246,7 @@ class ViewController: UIViewController {
     @IBAction func BUTTONAC(_ sender: Any) {
         LED.text = ""
         temp=0
-        betemp=0
+        code=0
         N=0
     }
     @IBAction func BUTTONREM(_ sender: Any) {
